@@ -1,4 +1,4 @@
-import DocumentDefinition from "mongoose";
+import DocumentDefinition, { FilterQuery } from "mongoose";
 import { omit } from "lodash";
 import UserModel, { UserDocument, UserInput } from "../models/user.model";
 
