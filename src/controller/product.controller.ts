@@ -34,7 +34,7 @@ export async function updateProductHandler(
   req: Request<UpdateProductInput["params"]>,
   res: Response
 ) {
-  const userId = res.locals.user._id;
+  const userId = res.locals.user._doc._id;
 
   const productId = req.params.productId;
   const update = req.body;
@@ -74,7 +74,7 @@ export async function deleteProductHandler(
   req: Request<DeleteProductInput["params"]>,
   res: Response
 ) {
-  const userId = res.locals.user._id;
+  const userId = res.locals.user._doc._id;
   const productId = req.params.productId;
 
   const product = await findProduct({ productId });
