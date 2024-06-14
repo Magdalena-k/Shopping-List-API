@@ -2,7 +2,7 @@ export default {
   port: 1337,
   dbURI: "mongodb://localhost:27017/shopping-list-API",
   saltWorkFactor: 10,
-  accesTokenTtl: "2m",
+  accesTokenTtl: "20m",
   refreshTokenTtl: "1y",
   publicKey: `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6gmYiLVEHid7H/1w9jUY
